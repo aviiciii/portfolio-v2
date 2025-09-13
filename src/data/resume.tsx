@@ -262,12 +262,13 @@ export const DATA = {
 	name: "Laaveshwaran Parthiban",
 	initials: "LP",
 	url: "https://laavesh.dev",
+	image: "/ogtag.png",
 	location: "Chennai, India",
 	locationLink: "https://www.google.com/maps/place/chennai",
 	description: "Associate Software Engineer at Acies Global",
 	summary:
 		"Passionate Software Engineer with hands-on experience in backend development, API design, and scalable system architecture. Skilled in .NET, Flask, and cloud platforms like GCP and Azure. A proactive team player dedicated to solving real-world problems through efficient, maintainable code.",
-	avatarUrl: "/me.png",
+	avatarUrl: "/me.jpeg",
 	skills: ["Python (Flask, Django)", ".NET", "Java", "JavaScript", "Deluge", "MySQL", "MongoDB", "Firebase", "CockroachDB", "GCP", "Azure", "Git", "Postman"],
 	navbar: [
 		{ href: "/", icon: HomeIcon, label: "Home" },
@@ -321,7 +322,7 @@ export const DATA = {
 			badges: [],
 			location: "Chennai, India",
 			title: "Associate Software Engineer",
-			logoUrl: "https://media.licdn.com/dms/image/v2/D560BAQGLS9G-OYd-qw/company-logo_100_100/B56Zc71vK5HUAU-/0/1749055632476/acies_global_logo?e=1755129600&v=beta&t=6vlX2NbZRCedh_y552mOTgDEeZ56TL8yUUSqX48tPYQ",
+			logoUrl: "/aciesglobal.png",
 			start: "Dec 2024",
 			end: "Present",
 			description:
@@ -333,7 +334,7 @@ export const DATA = {
 			badges: [],
 			location: "Chennai, India",
 			title: "Intern - Backend Developer",
-			logoUrl: "https://media.licdn.com/dms/image/v2/D560BAQGi72a9wQo3aA/company-logo_100_100/company-logo_100_100/0/1683536363221/auralapp_logo?e=1755129600&v=beta&t=CKMHZyF-Q177fXM-R7Klxktfh62ygRA4wFOO2oCZcWA",
+			logoUrl: "/auralapp.jpeg",
 			start: "Nov 2023",
 			end: "Feb 2024",
 			description:
@@ -345,14 +346,38 @@ export const DATA = {
 		{
 			school: "Panimalar Engineering College",
 			href: "https://panimalar.ac.in",
-			degree: "B.Tech - Computer Science & Business Systems (CGPA: 8.266)",
-			logoUrl: "https://media.licdn.com/dms/image/v2/C510BAQGSurK4rsm6cQ/company-logo_100_100/company-logo_100_100/0/1630616537603/panimalar_engineering_college_logo?e=1755129600&v=beta&t=LMcsSblP3eOnao8xS3wfHRp9rCsN9OHMY48aG4m7Ku4",
-			start: "2021",
-			end: "2025",
+			degree: "B.Tech - Computer Science & Business Systems",
+			logoUrl: "/pec.png",
+			start: "Sep 2021",
+			end: "Apr 2025",
 		},
 	],
 
 	projects: [
+		{
+      title: "Eventopia",
+      href: "https://eventopia.in",
+      dates: "May 2025 - Present",
+      active: true,
+      description:
+        "An event listing portal for college events, festivals, and hackathons.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://eventopia.in",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+	  video: "",
+    },
 		{
 			title: "Unique Student Identity & Profile System",
 			href: "https://github.com/ashwin3082002/CodeAlpha-SIH",
@@ -360,6 +385,13 @@ export const DATA = {
 			active: true,
 			description: "Secure system for verified organizations to access academic records of students. Winner of Smart India Hackathon 2022.",
 			technologies: ["Django", "Python", "MySQL", "REST API", "GCP"],
+			links: [
+        {
+          type: "Source",
+          href: "https://github.com/ashwin3082002/CodeAlpha-SIH",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
 		},
 		{
 			title: "Vercel Bot for Zoho Cliq",
@@ -368,6 +400,13 @@ export const DATA = {
 			active: true,
 			description: "Built a Zoho Cliq extension for managing Vercel projects using slash commands, real-time webhooks, and OAuth2 integration.",
 			technologies: ["Deluge", "OAuth2", "Zoho Creator", "REST API"],
+			links: [
+        {
+          type: "Source",
+          href: "https://github.com/aviiciii/cliqtrix24",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
 		},
 		
 		{
@@ -379,10 +418,12 @@ export const DATA = {
 		},
     {
 			title: "Boostfolio – AI Portfolio Enhancer",
-			dates: "Jun 2023",
+			dates: "Jun, 2023",
 			active: true,
 			description: "Winner of MLH Hack Your Portfolio. Built Django backend with OpenAI integration to give resume-based recommendations.",
 			technologies: ["Django", "OpenAI", "REST API", "Web Development"],
+
+
 		},
 		{
 			title: "Clipboard in the Cloud",
@@ -434,11 +475,26 @@ export const DATA = {
 		},
 	],
 	hackathons: [
-		
 		{
-			title: "Make School's Student App Competition 2017",
+			title: "Electrothon 6.0",
+			dates: "Jan 24th - 26th, 2024",
+			location: "NIT Hamirpur, Himachal Pradesh, India",
+			description:
+				"Developed Super Graphic Air Traffic, a VR website made to introduce people to the world of air traffic controlling. This project was built completely using THREE.js as well as a node backend server.",
+			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/mhacks-9.png",
+			mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
+			links: [
+				{
+					title: "Source",
+					icon: <Icons.github className="h-4 w-4" />,
+					href: "https://github.com/aviiciii/RenalCare",
+				},
+			],
+		},
+		{
+			title: "Hack For Hackers",
 			dates: "May 19th - 21st, 2017",
-			location: "International",
+			location: "Global (Online)",
 			description: "Improved PocketDoc and submitted to online competition",
 			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/make-school-hackathon.png",
 			win: "Top 10 Finalist | Honourable Mention",
@@ -451,32 +507,76 @@ export const DATA = {
 				{
 					title: "Devpost",
 					icon: <Icons.globe className="h-4 w-4" />,
-					href: "https://devpost.com/software/pocketdoc-react-native",
+					href: "https://devpost.com/software/hackportal",
 				},
 				{
 					title: "YouTube",
 					icon: <Icons.youtube className="h-4 w-4" />,
-					href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
+					href: "https://www.youtube.com/watch?v=uXDcHNF1XHg",
 				},
 				{
 					title: "Source",
 					icon: <Icons.github className="h-4 w-4" />,
-					href: "https://github.com/dillionverma/pocketdoc-react-native",
+					href: "https://github.com/aviiciii/hack4hackers",
 				},
 			],
 		},
 		{
-			title: "HackMining",
-			dates: "May 12th - 14th, 2017",
-			location: "Toronto, Ontario",
-			description: "Developed neural network to optimize a mining process",
-			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-mining.png",
-			links: [],
+			title: "Pride Hacks",
+			dates: "June 16 - 18, 2023",
+			location: "Global (Online)",
+			description: "Improved PocketDoc and submitted to online competition",
+			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/make-school-hackathon.png",
+			win: "Top 10 Finalist | Honourable Mention",
+			links: [
+				{
+					title: "Devpost",
+					icon: <Icons.globe className="h-4 w-4" />,
+					href: "https://devpost.com/software/rainbow-ally",
+				},
+				{
+					title: "YouTube",
+					icon: <Icons.youtube className="h-4 w-4" />,
+					href: "https://www.youtube.com/watch?v=ppL8flLyPTU",
+				},
+				{
+					title: "Source",
+					icon: <Icons.github className="h-4 w-4" />,
+					href: "https://github.com/HetviSoni/rainbow-ally",
+				},
+			],
 		},
 		{
-			title: "Waterloo Equithon",
-			dates: "May 5th - 7th, 2017",
-			location: "Waterloo, Ontario",
+			title: "Hack your Portfolio",
+			dates: "June 2 - 4, 2023",
+			location: "Remote (Global)",
+			description: "Developed a mobile game which enables city-wide manhunt with random lobbies",
+			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/qhacks.png",
+			mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
+			links: [
+				
+				{
+					title: "Devpost",
+					icon: <Icons.globe className="h-4 w-4" />,
+					href: "https://devpost.com/software/hack-your-portfolio-placeholder",
+				},
+				{
+					title: "YouTube",
+					icon: <Icons.youtube className="h-4 w-4" />,
+					href: "https://www.youtube.com/watch?v=-YPzn3-8oQI",
+				},
+				{
+					title: "Source",
+					icon: <Icons.github className="h-4 w-4" />,
+					href: "https://github.com/aviiciii/boostfolio",
+				},
+			],
+		},
+		
+		{
+			title: "PRoDIGI by Cognizant Technology Solutions",
+			dates: "April, 2023",
+			location: "Chennai, India",
 			description:
 				"Developed Pocketdoc, an app in which you take a picture of a physical wound, and the app returns common solutions or cures to the injuries or diseases.",
 			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/waterloo-equithon.png",
@@ -501,7 +601,7 @@ export const DATA = {
 		{
 			title: "St. Joseph Hackathon",
 			dates: "April 28th - 30th, 2017",
-			location: "Waterloo, Ontario",
+			location: "Chennai, India",
 			description:
 				"Developed Earthwatch, a web application which allows users in a plane to virtually see important points of interest about the world below them. They can even choose to fly away from their route and then fly back if they choose. Special thanks to CesiumJS for providing open source world and plane models.",
 			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/space-apps.png",
@@ -513,26 +613,11 @@ export const DATA = {
 				},
 			],
 		},
-		{
-			title: "Electrothon 6.0",
-			dates: "Jan 24th - 26th, 2024",
-			location: "Ann Arbor, Michigan",
-			description:
-				"Developed Super Graphic Air Traffic, a VR website made to introduce people to the world of air traffic controlling. This project was built completely using THREE.js as well as a node backend server.",
-			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/mhacks-9.png",
-			mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-			links: [
-				{
-					title: "Source",
-					icon: <Icons.github className="h-4 w-4" />,
-					href: "https://github.com/dillionverma/threejs-planes",
-				},
-			],
-		},
+		
 		{
 			title: "Hackverse",
 			dates: "March 4th - 5th, 2023",
-			location: "Waterloo, Ontario",
+			location: "Chennai, India",
 			description:
 				"Developed at StartHacks 2017, Recipic is a mobile app which allows you to take pictures of ingredients around your house, and it will recognize those ingredients using ClarifAI image recognition API and return possible recipes to make. Recipic recieved 1st place at the hackathon for best pitch and hack.",
 			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/starthacks.png",
@@ -542,61 +627,66 @@ export const DATA = {
 				{
 					title: "Source (Mobile)",
 					icon: <Icons.github className="h-4 w-4" />,
-					href: "https://github.com/mattBlackDesign/recipic-ionic",
-				},
-				{
-					title: "Source (Server)",
-					icon: <Icons.github className="h-4 w-4" />,
-					href: "https://github.com/mattBlackDesign/recipic-rails",
+					href: "https://github.com/aviiciii/escrow_blockchain",
 				},
 			],
 		},
-		{
-			title: "Hack your Portfolio",
-			dates: "February 3rd - 5th, 2024",
-			location: "Remote (Global)",
-			description: "Developed a mobile game which enables city-wide manhunt with random lobbies",
-			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/qhacks.png",
-			mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-			links: [
-				{
-					title: "Source (Mobile)",
-					icon: <Icons.github className="h-4 w-4" />,
-					href: "https://github.com/dillionverma/human-huntr-react-native",
-				},
-				{
-					title: "Source (API)",
-					icon: <Icons.github className="h-4 w-4" />,
-					href: "https://github.com/mattBlackDesign/human-huntr-rails",
-				},
-			],
-		},
+		
 		{
 			title: "Diversion",
-			dates: "November 26th, 2023",
-			location: "Chennai, India",
+			dates: "November 26, 2023",
+			location: "Kolkata, India",
 			description: "Developed a mock of Windows 11 with interesting notifications and functionality",
 			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/terrible-hacks-v.png",
 			links: [
 				{
 					title: "Source",
 					icon: <Icons.github className="h-4 w-4" />,
-					href: "https://github.com/justinmichaud/TerribleHacks2016-Windows11",
+					href: "https://github.com/ashwin3082002/diverision2k23",
 				},
 			],
 		},
 		{
-			title: "Smart India Hackathon 2022",
-			dates: "August 25th - 26th, 2022",
-			location: "Warangal, India",
+			title: "Health Care Hackathon",
+			dates: "November 11 - 13, 2022",
+			location: "IIIT-S & EMIDS, Sri City, India",
 			description:
-				"Student Identification Portal is a unique identification system for students and institutions. This is a problem statement issued by Meity. The system works to reduce time and the hassel caused to students, institutions and organizations to verify the student's credentials and their educational history. Our aim is to provide real time verification for student details and providing access of a group data to government sectors and other NGOs for them to guide students in need. Our system also makes providng of scholarships, grants and fellowship a ease. Our project was selected as the Winner🏆 in Smart India Hackathon 2022.",
+				"Student Identification Portal is a unique identification system for students and institutions. This is a problem statement issued by MeitY. The system works to reduce time and the hassel caused to students, institutions and organizations to verify the student's credentials and their educational history. Our project was selected as the Winner🏆 in Smart India Hackathon 2022.",
 			image: "https://media.licdn.com/dms/image/v2/C510BAQGAmTUtxpvm0Q/company-logo_100_100/company-logo_100_100/0/1630581404006?e=1755129600&v=beta&t=dYHDtMVreWNNXBaFdhGC7H8LjXIjhYepd3NpBpSVDrQ",
 			links: [
 				{
 					title: "Source",
 					icon: <Icons.github className="h-4 w-4" />,
-					href: "https://github.com/UWPortalSDK/crowmark",
+					href: "https://github.com/ashwin3082002/CodeAlpha_SIH",
+				},
+			],
+		},
+		{
+			title: "FABC Blockchain Hackathon",
+			dates: "September 14, 2022",
+			location: "Chennai, India & Dubai, UAE",
+			description: "Developed neural network to optimize a mining process",
+			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-mining.png",
+			links: [
+				{
+					title: "Source",
+					icon: <Icons.github className="h-4 w-4" />,
+					href: "https://github.com/ashwin3082002/SIP_Blockchain",
+				},
+			],
+		},
+		{
+			title: "Smart India Hackathon 2022",
+			dates: "August 25 - 26, 2022",
+			location: "Warangal, India",
+			description:
+				"Student Identification Portal is a unique identification system for students and institutions. This is a problem statement issued by MeitY. The system works to reduce time and the hassel caused to students, institutions and organizations to verify the student's credentials and their educational history. Our project was selected as the Winner🏆 in Smart India Hackathon 2022.",
+			image: "https://media.licdn.com/dms/image/v2/C510BAQGAmTUtxpvm0Q/company-logo_100_100/company-logo_100_100/0/1630581404006?e=1755129600&v=beta&t=dYHDtMVreWNNXBaFdhGC7H8LjXIjhYepd3NpBpSVDrQ",
+			links: [
+				{
+					title: "Source",
+					icon: <Icons.github className="h-4 w-4" />,
+					href: "https://github.com/ashwin3082002/CodeAlpha_SIH",
 				},
 			],
 		},
