@@ -265,7 +265,7 @@ export const DATA = {
 	image: "/ogtag.png",
 	location: "Chennai, India",
 	locationLink: "https://www.google.com/maps/place/chennai",
-	description: "Associate Software Engineer at Acies Global",
+	description: "Member of Technical Staff at Zoho",
 	summary:
 		"Passionate Software Engineer with hands-on experience in backend development, API design, and scalable system architecture. Skilled in .NET, Flask, and cloud platforms like GCP and Azure. A proactive team player dedicated to solving real-world problems through efficient, maintainable code.",
 	avatarUrl: "/me.jpeg",
@@ -282,21 +282,18 @@ export const DATA = {
 				name: "GitHub",
 				url: "https://github.com/aviiciii",
 				icon: Icons.github,
-
 				navbar: true,
 			},
 			LinkedIn: {
 				name: "LinkedIn",
 				url: "https://www.linkedin.com/in/laavesh/",
 				icon: Icons.linkedin,
-
 				navbar: true,
 			},
 			X: {
 				name: "X",
 				url: "https://dub.sh/dillion-twitter",
 				icon: Icons.x,
-
 				navbar: false,
 			},
 			Youtube: {
@@ -309,13 +306,24 @@ export const DATA = {
 				name: "Send Email",
 				url: "mailto:laavesh1@gmail.com",
 				icon: Icons.email,
-
 				navbar: true,
 			},
 		},
 	},
 
 	work: [
+		{
+			company: "Zoho Corporation",
+			href: "https://www.zoho.com",
+			badges: [],
+			location: "Chennai, India",
+			title: "Member of Technical Staff",
+			logoUrl: "/zoho.webp",
+			start: "Oct 2025",
+			end: "Present",
+			description:
+				"Engineering the core C++ native engine for Zoho Sheets, ensuring high performance and complete feature support across all major platforms and operating systems.",
+		},
 		{
 			company: "Acies Global",
 			href: "https://aciesglobal.com",
@@ -324,7 +332,7 @@ export const DATA = {
 			title: "Associate Software Engineer",
 			logoUrl: "/aciesglobal.png",
 			start: "Dec 2024",
-			end: "Present",
+			end: "Oct 2025",
 			description:
 				"Built scalable backend APIs using .NET with clean architecture. Conducted root cause analysis, data pattern recognition, and used SQL to generate insights for client-specific solutions.",
 		},
@@ -355,43 +363,36 @@ export const DATA = {
 
 	projects: [
 		{
-      title: "Eventopia",
-      href: "https://eventopia.in",
-      dates: "May 2025 - Present",
-      active: true,
-      description:
-        "An event listing portal for college events, festivals, and hackathons.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "TailwindCSS",
-        "Shadcn UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://eventopia.in",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-	  video: "",
-    },
+			title: "Eventopia",
+			href: "https://eventopia.in",
+			dates: "May 2025 - Present",
+			active: true,
+			description: "An event listing portal for college events, festivals, and hackathons.",
+			technologies: ["Next.js", "Typescript", "PostgreSQL", "TailwindCSS", "Shadcn UI"],
+			links: [
+				{
+					type: "Website",
+					href: "https://eventopia.in",
+					icon: <Icons.globe className="size-3" />,
+				},
+			],
+			image: "",
+			video: "",
+		},
 		{
 			title: "Unique Student Identity & Profile System",
-			href: "https://github.com/ashwin3082002/CodeAlpha-SIH",
+			href: "https://github.com/ashwin3082002/CodeAlpha_SIH",
 			dates: "Aug 2022 – Oct 2022",
 			active: true,
 			description: "Secure system for verified organizations to access academic records of students. Winner of Smart India Hackathon 2022.",
 			technologies: ["Django", "Python", "MySQL", "REST API", "GCP"],
 			links: [
-        {
-          type: "Source",
-          href: "https://github.com/ashwin3082002/CodeAlpha-SIH",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
+				{
+					type: "Source",
+					href: "https://github.com/ashwin3082002/CodeAlpha_SIH",
+					icon: <Icons.github className="size-3" />,
+				},
+			],
 		},
 		{
 			title: "Vercel Bot for Zoho Cliq",
@@ -401,14 +402,14 @@ export const DATA = {
 			description: "Built a Zoho Cliq extension for managing Vercel projects using slash commands, real-time webhooks, and OAuth2 integration.",
 			technologies: ["Deluge", "OAuth2", "Zoho Creator", "REST API"],
 			links: [
-        {
-          type: "Source",
-          href: "https://github.com/aviiciii/cliqtrix24",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
+				{
+					type: "Source",
+					href: "https://github.com/aviiciii/cliqtrix24",
+					icon: <Icons.github className="size-3" />,
+				},
+			],
 		},
-		
+
 		{
 			title: "QR Hacker Check-In",
 			dates: "Dec 2023 – Jan 2024",
@@ -416,14 +417,12 @@ export const DATA = {
 			description: "Developed a QR-based check-in system for PEC Hacks using Flask backend and Google Sheets API for real-time data sync.",
 			technologies: ["Flask", "JavaScript", "Google Sheets API", "QR Code"],
 		},
-    {
+		{
 			title: "Boostfolio – AI Portfolio Enhancer",
 			dates: "Jun, 2023",
 			active: true,
 			description: "Winner of MLH Hack Your Portfolio. Built Django backend with OpenAI integration to give resume-based recommendations.",
 			technologies: ["Django", "OpenAI", "REST API", "Web Development"],
-
-
 		},
 		{
 			title: "Clipboard in the Cloud",
@@ -477,10 +476,10 @@ export const DATA = {
 	hackathons: [
 		{
 			title: "Electrothon 6.0",
-			dates: "Jan 24th - 26th, 2024",
+			dates: "Mar 8th - 10th, 2024",
 			location: "NIT Hamirpur, Himachal Pradesh, India",
 			description:
-				"Developed Super Graphic Air Traffic, a VR website made to introduce people to the world of air traffic controlling. This project was built completely using THREE.js as well as a node backend server.",
+				"Developed RenalCare, a mobile application that utilizes machine learning to predict kidney disease risk based on user health data, aiming to facilitate early diagnosis and intervention.",
 			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/mhacks-9.png",
 			mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
 			links: [
@@ -493,9 +492,10 @@ export const DATA = {
 		},
 		{
 			title: "Hack For Hackers",
-			dates: "May 19th - 21st, 2017",
+			dates: "July, 2023",
 			location: "Global (Online)",
-			description: "Improved PocketDoc and submitted to online competition",
+			description:
+				"Developed HackPortal, a web application for managing hackathons. The platform allows hackers to register, access event info, and submit queries, while organizers have superuser privileges to manage attendees, make announcements, and respond to queries.",
 			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/make-school-hackathon.png",
 			win: "Top 10 Finalist | Honourable Mention",
 			links: [
@@ -525,7 +525,8 @@ export const DATA = {
 			title: "Pride Hacks",
 			dates: "June 16 - 18, 2023",
 			location: "Global (Online)",
-			description: "Improved PocketDoc and submitted to online competition",
+			description:
+				"Built Rainbow Ally, a central hub designed to champion and empower the LGBTQ+ community and its allies by providing practical tools, fostering connections, and amplifying underrepresented voices.",
 			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/make-school-hackathon.png",
 			win: "Top 10 Finalist | Honourable Mention",
 			links: [
@@ -550,11 +551,15 @@ export const DATA = {
 			title: "Hack your Portfolio",
 			dates: "June 2 - 4, 2023",
 			location: "Remote (Global)",
-			description: "Developed a mobile game which enables city-wide manhunt with random lobbies",
+			description:
+				"Developed Boostfolio, a web-based platform designed to enhance personal portfolios and assist users in tailoring their portfolios to specific job opportunities. It analyzes portfolios and CVs against job descriptions, providing tailored suggestions for improvement to boost users' prospects and help them achieve their career goals.",
 			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/qhacks.png",
 			mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
 			links: [
-				
+				{
+					title: "Winner",
+					href: "#",
+				},
 				{
 					title: "Devpost",
 					icon: <Icons.globe className="h-4 w-4" />,
@@ -572,35 +577,25 @@ export const DATA = {
 				},
 			],
 		},
-		
+
 		{
 			title: "PRoDIGI by Cognizant Technology Solutions",
 			dates: "April, 2023",
 			location: "Chennai, India",
 			description:
-				"Developed Pocketdoc, an app in which you take a picture of a physical wound, and the app returns common solutions or cures to the injuries or diseases.",
+				"Developed an e-commerce MVP featuring an AI-driven shade recommendation system that analyzes user skin type and preferences to suggest optimal colors for makeup and clothing, increasing product personalization.",
 			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/waterloo-equithon.png",
 			links: [
 				{
-					title: "Devpost",
-					icon: <Icons.globe className="h-4 w-4" />,
-					href: "https://devpost.com/software/pocketdoc-react-native",
-				},
-				{
-					title: "YouTube",
-					icon: <Icons.youtube className="h-4 w-4" />,
-					href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
-				},
-				{
 					title: "Source",
 					icon: <Icons.github className="h-4 w-4" />,
-					href: "https://github.com/dillionverma/pocketdoc-react-native",
+					href: "https://github.com/aviiciii/prodigi",
 				},
 			],
 		},
 		{
 			title: "St. Joseph Hackathon",
-			dates: "April 28th - 30th, 2017",
+			dates: "April 28th - 30th, 2023",
 			location: "Chennai, India",
 			description:
 				"Developed Earthwatch, a web application which allows users in a plane to virtually see important points of interest about the world below them. They can even choose to fly away from their route and then fly back if they choose. Special thanks to CesiumJS for providing open source world and plane models.",
@@ -613,13 +608,13 @@ export const DATA = {
 				},
 			],
 		},
-		
+
 		{
 			title: "Hackverse",
 			dates: "March 4th - 5th, 2023",
 			location: "Chennai, India",
 			description:
-				"Developed at StartHacks 2017, Recipic is a mobile app which allows you to take pictures of ingredients around your house, and it will recognize those ingredients using ClarifAI image recognition API and return possible recipes to make. Recipic recieved 1st place at the hackathon for best pitch and hack.",
+				"Developed a blockchain-based escrow system that facilitates secure and transparent transactions between buyers and sellers, ensuring trust and accountability in online marketplaces.",
 			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/starthacks.png",
 			win: "1st Place Winner",
 			mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
@@ -631,12 +626,13 @@ export const DATA = {
 				},
 			],
 		},
-		
+
 		{
 			title: "Diversion",
 			dates: "November 26, 2023",
 			location: "Kolkata, India",
-			description: "Developed a mock of Windows 11 with interesting notifications and functionality",
+			description:
+				"Developed a Escrow System using Blockchain Technology to facilitate secure and transparent transactions between buyers and sellers, ensuring trust and accountability in online marketplaces.",
 			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/terrible-hacks-v.png",
 			links: [
 				{
@@ -651,7 +647,7 @@ export const DATA = {
 			dates: "November 11 - 13, 2022",
 			location: "IIIT-S & EMIDS, Sri City, India",
 			description:
-				"Student Identification Portal is a unique identification system for students and institutions. This is a problem statement issued by MeitY. The system works to reduce time and the hassel caused to students, institutions and organizations to verify the student's credentials and their educational history. Our project was selected as the Winner🏆 in Smart India Hackathon 2022.",
+				"Developed a MVP of a Patient Health Record System to securely store and share patient medical records among authorized healthcare providers, enhancing data integrity and accessibility while ensuring patient privacy.",
 			image: "https://media.licdn.com/dms/image/v2/C510BAQGAmTUtxpvm0Q/company-logo_100_100/company-logo_100_100/0/1630581404006?e=1755129600&v=beta&t=dYHDtMVreWNNXBaFdhGC7H8LjXIjhYepd3NpBpSVDrQ",
 			links: [
 				{
@@ -665,7 +661,8 @@ export const DATA = {
 			title: "FABC Blockchain Hackathon",
 			dates: "September 14, 2022",
 			location: "Chennai, India & Dubai, UAE",
-			description: "Developed neural network to optimize a mining process",
+			description:
+				"Developed a Blockchain-based Student Identification Portal to securely store and verify student credentials and educational history, reducing verification time and hassle for students, institutions, and organizations.",
 			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-mining.png",
 			links: [
 				{
@@ -676,13 +673,17 @@ export const DATA = {
 			],
 		},
 		{
-			title: "Smart India Hackathon 2022",
+			title: "Smart India Hackathon",
 			dates: "August 25 - 26, 2022",
 			location: "Warangal, India",
 			description:
-				"Student Identification Portal is a unique identification system for students and institutions. This is a problem statement issued by MeitY. The system works to reduce time and the hassel caused to students, institutions and organizations to verify the student's credentials and their educational history. Our project was selected as the Winner🏆 in Smart India Hackathon 2022.",
+				"We built a unique identification system for students and institutions for MeitY, Government of India. The system works to reduce time and the hassel caused to students, institutions and organizations to verify the student's credentials and their educational history. Our project was selected as the Winner🏆 and taken forward for implementation.",
 			image: "https://media.licdn.com/dms/image/v2/C510BAQGAmTUtxpvm0Q/company-logo_100_100/company-logo_100_100/0/1630581404006?e=1755129600&v=beta&t=dYHDtMVreWNNXBaFdhGC7H8LjXIjhYepd3NpBpSVDrQ",
 			links: [
+				{
+					title: "Winner",
+					href: "#",
+				},
 				{
 					title: "Source",
 					icon: <Icons.github className="h-4 w-4" />,
