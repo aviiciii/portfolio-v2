@@ -1,6 +1,20 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
+export const HACKATHON_IMAGES = {
+	"Electrothon 6.0": "/hackathonlogos/11.webp",
+	"Hack For Hackers": "/hackathonlogos/10.webp",
+	"Pride Hacks": "/hackathonlogos/9.webp",
+	"Hack your Portfolio": "/hackathonlogos/8.webp",
+	"PRoDIGI by Cognizant Technology Solutions": "/hackathonlogos/7.webp",
+	"St. Joseph Hackathon": "/hackathonlogos/6.webp",
+	"Hackverse": "/hackathonlogos/5.webp",
+	"Diversion": "/hackathonlogos/4.webp",
+	"Health Care Hackathon": "/hackathonlogos/3.webp",
+	"FABC Blockchain Hackathon": "/hackathonlogos/2.webp",
+	"Smart India Hackathon": "/hackathonlogos/1.webp",
+}
+
 // export const DATA = {
 //   name: "Laaveshwaran Parthiban",
 //   initials: "LP",
@@ -338,7 +352,7 @@ export const DATA = {
 		},
 		{
 			company: "AuralApp",
-			href: "https://auralapp.in",
+			href: "https://www.linkedin.com/company/auralapp",
 			badges: [],
 			location: "Chennai, India",
 			title: "Intern - Backend Developer",
@@ -480,7 +494,6 @@ export const DATA = {
 			location: "NIT Hamirpur, Himachal Pradesh, India",
 			description:
 				"Developed RenalCare, a mobile application that utilizes machine learning to predict kidney disease risk based on user health data, aiming to facilitate early diagnosis and intervention.",
-			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/mhacks-9.png",
 			mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
 			links: [
 				{
@@ -496,7 +509,6 @@ export const DATA = {
 			location: "Global (Online)",
 			description:
 				"Developed HackPortal, a web application for managing hackathons. The platform allows hackers to register, access event info, and submit queries, while organizers have superuser privileges to manage attendees, make announcements, and respond to queries.",
-			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/make-school-hackathon.png",
 			win: "Top 10 Finalist | Honourable Mention",
 			links: [
 				{
@@ -527,7 +539,6 @@ export const DATA = {
 			location: "Global (Online)",
 			description:
 				"Built Rainbow Ally, a central hub designed to champion and empower the LGBTQ+ community and its allies by providing practical tools, fostering connections, and amplifying underrepresented voices.",
-			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/make-school-hackathon.png",
 			win: "Top 10 Finalist | Honourable Mention",
 			links: [
 				{
@@ -553,7 +564,6 @@ export const DATA = {
 			location: "Remote (Global)",
 			description:
 				"Developed Boostfolio, a web-based platform designed to enhance personal portfolios and assist users in tailoring their portfolios to specific job opportunities. It analyzes portfolios and CVs against job descriptions, providing tailored suggestions for improvement to boost users' prospects and help them achieve their career goals.",
-			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/qhacks.png",
 			mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
 			links: [
 				{
@@ -584,7 +594,6 @@ export const DATA = {
 			location: "Chennai, India",
 			description:
 				"Developed an e-commerce MVP featuring an AI-driven shade recommendation system that analyzes user skin type and preferences to suggest optimal colors for makeup and clothing, increasing product personalization.",
-			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/waterloo-equithon.png",
 			links: [
 				{
 					title: "Source",
@@ -599,7 +608,6 @@ export const DATA = {
 			location: "Chennai, India",
 			description:
 				"Developed Earthwatch, a web application which allows users in a plane to virtually see important points of interest about the world below them. They can even choose to fly away from their route and then fly back if they choose. Special thanks to CesiumJS for providing open source world and plane models.",
-			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/space-apps.png",
 			links: [
 				{
 					title: "Source",
@@ -615,7 +623,6 @@ export const DATA = {
 			location: "Chennai, India",
 			description:
 				"Developed a blockchain-based escrow system that facilitates secure and transparent transactions between buyers and sellers, ensuring trust and accountability in online marketplaces.",
-			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/starthacks.png",
 			win: "1st Place Winner",
 			mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
 			links: [
@@ -633,7 +640,6 @@ export const DATA = {
 			location: "Kolkata, India",
 			description:
 				"Developed a Escrow System using Blockchain Technology to facilitate secure and transparent transactions between buyers and sellers, ensuring trust and accountability in online marketplaces.",
-			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/terrible-hacks-v.png",
 			links: [
 				{
 					title: "Source",
@@ -648,7 +654,6 @@ export const DATA = {
 			location: "IIIT-S & EMIDS, Sri City, India",
 			description:
 				"Developed a MVP of a Patient Health Record System to securely store and share patient medical records among authorized healthcare providers, enhancing data integrity and accessibility while ensuring patient privacy.",
-			image: "https://media.licdn.com/dms/image/v2/C510BAQGAmTUtxpvm0Q/company-logo_100_100/company-logo_100_100/0/1630581404006?e=1755129600&v=beta&t=dYHDtMVreWNNXBaFdhGC7H8LjXIjhYepd3NpBpSVDrQ",
 			links: [
 				{
 					title: "Source",
@@ -663,7 +668,6 @@ export const DATA = {
 			location: "Chennai, India & Dubai, UAE",
 			description:
 				"Developed a Blockchain-based Student Identification Portal to securely store and verify student credentials and educational history, reducing verification time and hassle for students, institutions, and organizations.",
-			image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-mining.png",
 			links: [
 				{
 					title: "Source",
@@ -678,7 +682,6 @@ export const DATA = {
 			location: "Warangal, India",
 			description:
 				"We built a unique identification system for students and institutions for MeitY, Government of India. The system works to reduce time and the hassel caused to students, institutions and organizations to verify the student's credentials and their educational history. Our project was selected as the Winner🏆 and taken forward for implementation.",
-			image: "https://media.licdn.com/dms/image/v2/C510BAQGAmTUtxpvm0Q/company-logo_100_100/company-logo_100_100/0/1630581404006?e=1755129600&v=beta&t=dYHDtMVreWNNXBaFdhGC7H8LjXIjhYepd3NpBpSVDrQ",
 			links: [
 				{
 					title: "Winner",

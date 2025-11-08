@@ -23,6 +23,7 @@ export function HackathonCard({
   image,
   links,
 }: Props) {
+  console.log("HackathonCard image:", image);
   return (
     <li className="relative ml-10 py-4">
       <div className="absolute -left-16 top-2 flex items-center justify-center bg-white rounded-full">
