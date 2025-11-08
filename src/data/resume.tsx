@@ -1,7 +1,7 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
-export const HACKATHON_IMAGES = {
+export const HACKATHON_IMAGES: Record<string, string> = {
 	"Electrothon 6.0": "/hackathonlogos/11.webp",
 	"Hack For Hackers": "/hackathonlogos/10.webp",
 	"Pride Hacks": "/hackathonlogos/9.webp",
