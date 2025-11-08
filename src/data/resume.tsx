@@ -273,6 +273,7 @@ export const HACKATHON_IMAGES: Record<string, string> = {
 // } as const;
 
 export const DATA = {
+	nickname: "Laavesh",
 	name: "Laaveshwaran Parthiban",
 	initials: "LP",
 	url: "https://laavesh.dev",
@@ -281,7 +282,7 @@ export const DATA = {
 	locationLink: "https://www.google.com/maps/place/chennai",
 	description: "Member of Technical Staff at Zoho",
 	summary:
-		"Passionate Software Engineer with hands-on experience in backend development, API design, and scalable system architecture. Skilled in .NET, Flask, and cloud platforms like GCP and Azure. A proactive team player dedicated to solving real-world problems through efficient, maintainable code.",
+		"Passionate Software Engineer with hands-on experience in backend development, API design, and scalable system architecture. A proactive team player dedicated to solving real-world problems through efficient, scalable and maintainable code.",
 	avatarUrl: "/me.jpeg",
 	skills: ["Python (Flask, Django)", ".NET", "Java", "JavaScript", "Deluge", "MySQL", "MongoDB", "Firebase", "CockroachDB", "GCP", "Azure", "Git", "Postman"],
 	navbar: [
@@ -505,7 +506,7 @@ export const DATA = {
 		},
 		{
 			title: "Hack For Hackers",
-			dates: "July, 2023",
+			dates: "July 2023",
 			location: "Global (Online)",
 			description:
 				"Developed HackPortal, a web application for managing hackathons. The platform allows hackers to register, access event info, and submit queries, while organizers have superuser privileges to manage attendees, make announcements, and respond to queries.",
@@ -590,7 +591,7 @@ export const DATA = {
 
 		{
 			title: "PRoDIGI by Cognizant Technology Solutions",
-			dates: "April, 2023",
+			dates: "April 2023",
 			location: "Chennai, India",
 			description:
 				"Developed an e-commerce MVP featuring an AI-driven shade recommendation system that analyzes user skin type and preferences to suggest optimal colors for makeup and clothing, increasing product personalization.",
