@@ -23,7 +23,6 @@ export function HackathonCard({
   image,
   links,
 }: Props) {
-  console.log("HackathonCard image:", image);
   return (
     <li className="relative ml-10 py-4">
       <div className="absolute -left-16 top-2 flex items-center justify-center bg-white rounded-full">
@@ -47,17 +46,32 @@ export function HackathonCard({
         )}
       </div>
       {links && links.length > 0 && (
-        <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
-          {links?.map((link, idx) => (
-            <Link href={link.href} key={idx}>
-              <Badge key={idx} title={link.title} className="flex gap-2">
-                {link.icon}
-                {link.title}
-              </Badge>
-            </Link>
-          ))}
-        </div>
-      )}
+  <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
+    {links.map((link, idx) => {
+      const badge = (
+        <Badge
+          key={idx}
+          variant={link.title.toLowerCase() === "winner" ? "winner" : "default"}
+          className="flex gap-2"
+        >
+          {link.icon}
+          {link.title}
+        </Badge>
+      );
+      if (link.href === "#") {
+        return <div key={idx}>{badge}</div>;
+      }
+
+      // ✅ Otherwise wrap in Next.js Link
+      return (
+        <Link href={link.href} key={idx}>
+          {badge}
+        </Link>
+      );
+    })}
+  </div>
+)}
+
     </li>
   );
 }

@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, icons, NotebookIcon } from "lucide-react";
 
 export const HACKATHON_IMAGES: Record<string, string> = {
 	"Electrothon 6.0": "/hackathonlogos/11.webp",
@@ -569,6 +569,7 @@ export const DATA = {
 			links: [
 				{
 					title: "Winner",
+					icon: <Icons.winner className="h-4 w-4" />,
 					href: "#",
 				},
 				{
@@ -624,7 +625,6 @@ export const DATA = {
 			location: "Chennai, India",
 			description:
 				"Developed a blockchain-based escrow system that facilitates secure and transparent transactions between buyers and sellers, ensuring trust and accountability in online marketplaces.",
-			win: "1st Place Winner",
 			mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
 			links: [
 				{
@@ -686,6 +686,7 @@ export const DATA = {
 			links: [
 				{
 					title: "Winner",
+					icon: <Icons.winner className="h-4 w-4" />,
 					href: "#",
 				},
 				{
