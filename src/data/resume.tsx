@@ -13,6 +13,8 @@ export const HACKATHON_IMAGES: Record<string, string> = {
 	"Health Care Hackathon": "/hackathonlogos/3.webp",
 	"FABC Blockchain Hackathon": "/hackathonlogos/2.webp",
 	"Smart India Hackathon": "/hackathonlogos/1.webp",
+	"Cliqtrix '24": "/zoho.webp",
+	"Cliqtrix '25": "/zoho.webp",
 }
 
 // export const DATA = {
@@ -278,6 +280,7 @@ export const DATA = {
 	initials: "LP",
 	url: "https://laavesh.dev",
 	image: "/ogtag.png",
+	resume: "/Laaveshwaran_Parthiban_Resume.pdf",
 	location: "Chennai, India",
 	locationLink: "https://www.google.com/maps/place/chennai",
 	description: "Member of Technical Staff at Zoho",
@@ -307,13 +310,13 @@ export const DATA = {
 			},
 			X: {
 				name: "X",
-				url: "https://dub.sh/dillion-twitter",
+				url: "https://x.com/laaveshwaran",
 				icon: Icons.x,
 				navbar: false,
 			},
 			Youtube: {
 				name: "Youtube",
-				url: "https://dub.sh/dillion-youtube",
+				url: "https://youtube.com/@laavesh",
 				icon: Icons.youtube,
 				navbar: false,
 			},
@@ -490,6 +493,21 @@ export const DATA = {
 	],
 	hackathons: [
 		{
+			title: "Cliqtrix '25",
+			dates: "December 2024",
+			location: "Chennai, India",
+			description:
+				"Developed a bot enabling teams to seamlessly interact with Basecamp from within Cliq. The bot supports task management, project updates, notifications, and team collaboration features, creating a unified workflow experience and improving productivity across projects.",
+			mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
+			links: [
+				{
+					title: "Source",
+					icon: <Icons.github className="h-4 w-4" />,
+					href: "https://github.com/aviiciii/cliqtrix25",
+				},
+			],
+		},
+		{
 			title: "Electrothon 6.0",
 			dates: "Mar 8th - 10th, 2024",
 			location: "NIT Hamirpur, Himachal Pradesh, India",
@@ -505,6 +523,26 @@ export const DATA = {
 			],
 		},
 		{
+			title: "Cliqtrix '24",
+			dates: "December 2023",
+			location: "Chennai, India",
+			description:
+				"Developed a cliq bot that brings Vercel’s deployment management features into the Zoho Cliq workspace, enabling streamlined workflows, improved team collaboration, and real-time project and deployment updates within a unified environment.",
+			mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
+			links: [
+				{
+					title: "Source",
+					icon: <Icons.github className="h-4 w-4" />,
+					href: "https://github.com/aviiciii/cliqtrix24",
+				},
+				{
+					title: "YouTube",
+					icon: <Icons.youtube className="h-4 w-4" />,
+					href: "https://youtu.be/uWyHaqybS8E",
+				},
+			],
+		},
+		{
 			title: "Hack For Hackers",
 			dates: "July 2023",
 			location: "Global (Online)",
@@ -512,11 +550,6 @@ export const DATA = {
 				"Developed HackPortal, a web application for managing hackathons. The platform allows hackers to register, access event info, and submit queries, while organizers have superuser privileges to manage attendees, make announcements, and respond to queries.",
 			win: "Top 10 Finalist | Honourable Mention",
 			links: [
-				{
-					title: "Medium Article",
-					icon: <Icons.globe className="h-4 w-4" />,
-					href: "https://medium.com/make-school/the-winners-of-make-schools-student-app-competition-2017-a6b0e72f190a",
-				},
 				{
 					title: "Devpost",
 					icon: <Icons.globe className="h-4 w-4" />,

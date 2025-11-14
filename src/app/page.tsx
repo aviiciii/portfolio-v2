@@ -37,6 +37,7 @@ export default function Page() {
               </Avatar>
             </BlurFade>
           </div>
+          
         </div>
       </section>
       <section id="about">
@@ -48,6 +49,9 @@ export default function Page() {
             {DATA.summary}
           </Markdown>
         </BlurFade>
+        
+
+
       </section>
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
@@ -110,6 +114,34 @@ export default function Page() {
             ))}
           </div>
         </div>
+        <BlurFade delay={BLUR_FADE_DELAY * 17}>
+  <div className="mt-12 flex justify-center">
+    <a
+      href={DATA.resume}
+      download
+      className="
+        inline-flex items-center gap-2 
+        rounded-md border border-foreground 
+        px-6 py-3 text-md font-medium 
+        text-foreground 
+        hover:bg-foreground hover:text-background 
+        transition-colors
+      "
+    >
+      Download Resume
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        className="w-6 h-6"
+      >
+        <path d="M12 5v14m0 0l-6-6m6 6l6-6" />
+      </svg>
+    </a>
+  </div>
+</BlurFade>
       </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
@@ -176,7 +208,7 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
+              {DATA.hackathons.slice().reverse().map((project, id) => (
                 <BlurFade
                   key={project.title + project.dates}
                   delay={BLUR_FADE_DELAY * 15 + id * 0.05}
@@ -196,6 +228,7 @@ export default function Page() {
         </div>
       </section>
       <section id="contact">
+        
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
